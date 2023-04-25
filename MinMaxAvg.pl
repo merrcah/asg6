@@ -11,3 +11,5 @@ min_max_avg([H|T], Min, Max, Avg) :-
     Max is max(H, RestMax),
     % average
     Avg is (H + RestAvg * length(T)) / (length(T) + 1).
+    
+    
